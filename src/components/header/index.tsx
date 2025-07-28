@@ -8,7 +8,7 @@ export function Header() {
   const { isSigned, loadingAuth } = useContext(AuthContext)
 
   return (
-    <header className='sticky top-0 flex h-[72px] w-full items-center justify-between border-b border-b-zinc-500 bg-white p-4 shadow'>
+    <header className='sticky top-0 z-50 flex h-[72px] w-full items-center justify-between border-b border-b-zinc-500 bg-white p-4 shadow'>
       <Link to='/'>
         <img src={logoImg} alt='Logo da DevCarros' />
       </Link>
