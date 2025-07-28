@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@utility text-red {
+  color: #e11138;
+}
+
+@utility bg-red {
+  background-color: #e11138;
+}
+
+@utility bg-color {
+  background-color: #f1f5f9;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f1f5f9;
+}
