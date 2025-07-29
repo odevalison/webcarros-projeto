@@ -6,6 +6,7 @@ import supabase from '../../services/supabase'
 import type { CarProps } from '../../types/car-props'
 import { priceFormat } from '../../utils/price-format'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { numberFormat } from '../../utils/number-format'
 
 export function CarDetails() {
   const { id } = useParams()
@@ -99,7 +100,7 @@ export function CarDetails() {
               </div>
               <div>
                 <p className='text-base/loose'>Km rodados</p>
-                <strong>{car?.km}</strong>
+                <strong>{numberFormat(Number(car?.km))}</strong>
               </div>
             </div>
 
